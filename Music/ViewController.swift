@@ -19,5 +19,7 @@ class ViewController: UIViewController {
     // シンバルの音源ファイルを指定
     let cymbalPath = Bundle.main.bundleURL.appendingPathComponent("cymbal.mp3")
     
+    // シンバル用のプレイヤーインスタンスを作成
+    var cymbalPlayer = AVAudioPlayer()
 }
 
