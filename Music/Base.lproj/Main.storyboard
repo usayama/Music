@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Stop"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s91-44-vAb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="s91-44-vAb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="673"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -55,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg_pattern" width="1334" height="1334"/>
         <image name="cymbal" width="150" height="150"/>
         <image name="guitar" width="150" height="150"/>
     </resources>
