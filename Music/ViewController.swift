@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     
     // シンバル用のプレイヤーインスタンスを作成
     var cymbalPlayer = AVAudioPlayer()
+    
+    @IBAction func cymbal(_ sender: Any) {
+        
+    }
 }
 
