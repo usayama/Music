@@ -21,27 +21,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="s91-44-vAb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH9-gt-Dec">
-                                <rect key="frame" x="45" y="155" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH9-gt-Dec">
+                                <rect key="frame" x="32.5" y="178.5" width="150" height="150"/>
                                 <state key="normal" image="cymbal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-LX-7AW">
-                                <rect key="frame" x="207" y="155" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-LX-7AW">
+                                <rect key="frame" x="192.5" y="178.5" width="150" height="150"/>
                                 <state key="normal" image="guitar"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-od-d2N">
-                                <rect key="frame" x="95" y="365" width="55" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-od-d2N">
+                                <rect key="frame" x="80" y="389.5" width="55" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-Tt-V51">
-                                <rect key="frame" x="236" y="365" width="61" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-Tt-V51">
+                                <rect key="frame" x="237" y="389.5" width="61" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,9 +47,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="s91-44-vAb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BYL-eG-7XX"/>
+                            <constraint firstItem="4TO-od-d2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="E7D-kU-F4b"/>
+                            <constraint firstItem="h9U-Tt-V51" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="EKI-8D-oU0"/>
+                            <constraint firstItem="RH9-gt-Dec" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="FhL-lV-mBk"/>
+                            <constraint firstItem="h9U-Tt-V51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="JCv-G8-FPg"/>
                             <constraint firstItem="s91-44-vAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zhd-GL-4Gt"/>
                             <constraint firstAttribute="bottom" secondItem="s91-44-vAb" secondAttribute="bottom" id="Zqr-c1-NH3"/>
+                            <constraint firstItem="RH9-gt-Dec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="amc-vc-eYZ"/>
                             <constraint firstItem="s91-44-vAb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d5T-ND-4ho"/>
+                            <constraint firstItem="luP-LX-7AW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="gMp-90-sFd"/>
+                            <constraint firstItem="luP-LX-7AW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="jJN-Fz-dbT"/>
+                            <constraint firstItem="4TO-od-d2N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="r1L-BY-cL5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
