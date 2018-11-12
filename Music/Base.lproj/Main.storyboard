@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="s91-44-vAb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="673"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="s91-44-vAb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH9-gt-Dec">
                                 <rect key="frame" x="45" y="155" width="150" height="150"/>
@@ -46,6 +45,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s91-44-vAb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BYL-eG-7XX"/>
+                            <constraint firstItem="s91-44-vAb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zhd-GL-4Gt"/>
+                            <constraint firstAttribute="bottom" secondItem="s91-44-vAb" secondAttribute="bottom" id="Zqr-c1-NH3"/>
+                            <constraint firstItem="s91-44-vAb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d5T-ND-4ho"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
