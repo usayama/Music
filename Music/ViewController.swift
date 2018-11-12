@@ -23,10 +23,15 @@ class ViewController: UIViewController {
     var cymbalPlayer = AVAudioPlayer()
     
     @IBAction func cymbal(_ sender: Any) {
-        // シンバル用のプレイヤーに音源パスを指定
-        cymbalPlayer = AVAudioPlayer(contentsOf: cymbalPath, fileTypeHint: nil)
-        // シンバルの音源再生
-        cymbalPlayer.play()
+        do {
+            // シンバル用のプレイヤーに音源パスを指定
+            cymbalPlayer = try AVAudioPlayer(contentsOf: cymbalPath, fileTypeHint: nil)
+            // シンバルの音源再生
+            cymbalPlayer.play()
+        } catch {
+            print("シンバルで、エラーが発生しました！")
+        }
+
     }
 }
 
