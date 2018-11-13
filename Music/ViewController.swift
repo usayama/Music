@@ -68,5 +68,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func stop(_ sender: Any) {
+        // バックミュージックを停止
+        backmusicPlayer.stop()
+    }
+    
 }
 
