@@ -23,15 +23,8 @@ class ViewController: UIViewController {
     var cymbalPlayer = AVAudioPlayer()
     
     @IBAction func cymbal(_ sender: Any) {
-        do {
-            // シンバル用のプレイヤーに音源パスを指定
-            cymbalPlayer = try AVAudioPlayer(contentsOf: cymbalPath, fileTypeHint: nil)
-            // シンバルの音源再生
-            cymbalPlayer.play()
-        } catch {
-            print("シンバルで、エラーが発生しました！")
-        }
-
+        // 関数を呼んでシンバルを鳴らす
+        soundPlayer(player: &cymbalPlayer, path: cymbalPath, count: 0)
     }
     
     // ギター音源のパスを変数に格納
@@ -40,14 +33,8 @@ class ViewController: UIViewController {
     var guitarPlayer = AVAudioPlayer()
     
     @IBAction func guitar(_ sender: Any) {
-        do {
-            // ギター用のプレイヤーに音源パスを指定
-            guitarPlayer = try AVAudioPlayer(contentsOf: guitarPath)
-            // ギター音源を再生
-            guitarPlayer.play()
-        } catch {
-            print("ギターで、エラーが発生しました！")
-        }
+        // 関数を呼んでギターを鳴らす
+        soundPlayer(player: &guitarPlayer, path: guitarPath, count: 0)
     }
     
     // BGM音源の音源ファイルを指定
@@ -56,16 +43,7 @@ class ViewController: UIViewController {
     var backmusicPlayer = AVAudioPlayer()
     
     @IBAction func play(_ sender: Any) {
-        do {
-            // バックミュージック用のプレイヤーに音源パスを指定
-            backmusicPlayer = try AVAudioPlayer(contentsOf: backmusicPath)
-            // リピート設定（-1でエンドレス）
-            backmusicPlayer.numberOfLoops = -1
-            // バックミュージック音源を再生
-            backmusicPlayer.play()
-        } catch {
-            print("バックミュージックで、エラーが発生しました！")
-        }
+        soundPlayer(player: &backmusicPlayer, path: backmusicPath, count: -1)
     }
     
     @IBAction func stop(_ sender: Any) {
@@ -73,5 +51,17 @@ class ViewController: UIViewController {
         backmusicPlayer.stop()
     }
     
+    fileprivate func soundPlayer(player:inout AVAudioPlayer, path: URL, count: Int) {
+        do {
+            // 音源のパスを指定
+            player = try AVAudioPlayer(contentsOf: path)
+            // ループを設定
+            player.numberOfLoops = count
+            // 再生
+            player.play()
+        } catch {
+            print("エラー")
+        }
+    }
 }
 
