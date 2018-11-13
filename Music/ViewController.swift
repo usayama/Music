@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(Bundle.main)
     }
 
     // シンバルの音源ファイルを指定
     let cymbalPath = Bundle.main.bundleURL.appendingPathComponent("cymbal.mp3")
-    
     // シンバル用のプレイヤーインスタンスを作成
     var cymbalPlayer = AVAudioPlayer()
     
@@ -33,5 +33,22 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    // ギター音源のパスを変数に格納
+    let guitarPath = Bundle.main.bundleURL.appendingPathComponent("guitar.mp3")
+    // ギター用のプレイヤーイオンスタンスを作成
+    var guitarPlayer = AVAudioPlayer()
+    
+    @IBAction func guitar(_ sender: Any) {
+        do {
+            // ギター用のプレイヤーに音源パスを指定
+            guitarPlayer = try AVAudioPlayer(contentsOf: guitarPath)
+            // 音を再生
+            guitarPlayer.play()
+        } catch {
+            print("ギターで、エラーが発生しました！")
+        }
+    }
+    
 }
 
