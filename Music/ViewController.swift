@@ -43,10 +43,28 @@ class ViewController: UIViewController {
         do {
             // ギター用のプレイヤーに音源パスを指定
             guitarPlayer = try AVAudioPlayer(contentsOf: guitarPath)
-            // 音を再生
+            // ギター音源を再生
             guitarPlayer.play()
         } catch {
             print("ギターで、エラーが発生しました！")
+        }
+    }
+    
+    // BGM音源の音源ファイルを指定
+    let backmusicPath = Bundle.main.bundleURL.appendingPathComponent("backmusic.mp3")
+    // BGMのインスタンスを作成
+    var backmusicPlayer = AVAudioPlayer()
+    
+    @IBAction func play(_ sender: Any) {
+        do {
+            // バックミュージック用のプレイヤーに音源パスを指定
+            backmusicPlayer = try AVAudioPlayer(contentsOf: backmusicPath)
+            // リピート設定（-1でエンドレス）
+            backmusicPlayer.numberOfLoops = -1
+            // バックミュージック音源を再生
+            backmusicPlayer.play()
+        } catch {
+            print("バックミュージックで、エラーが発生しました！")
         }
     }
     
