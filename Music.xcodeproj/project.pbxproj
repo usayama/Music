@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6AD660219D6B0100E6E442 /* finger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C6AD65F219D6B0100E6E442 /* finger.mp3 */; };
 		0C89FE852199929B00AFFDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FE842199929B00AFFDF7 /* AppDelegate.swift */; };
 		0C89FE872199929C00AFFDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FE862199929C00AFFDF7 /* ViewController.swift */; };
 		0C89FE8A2199929C00AFFDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C89FE882199929C00AFFDF7 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C6AD65F219D6B0100E6E442 /* finger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finger.mp3; sourceTree = "<group>"; };
 		0C89FE812199929B00AFFDF7 /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C89FE842199929B00AFFDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C89FE862199929C00AFFDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0C89FE972199C5AF00AFFDF7 /* backmusic.mp3 */,
 				0C89FE962199C5AF00AFFDF7 /* cymbal.mp3 */,
 				0C89FE982199C5B000AFFDF7 /* guitar.mp3 */,
+				0C6AD65F219D6B0100E6E442 /* finger.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				0C89FE992199C5B000AFFDF7 /* cymbal.mp3 in Resources */,
 				0C89FE8F2199929E00AFFDF7 /* LaunchScreen.storyboard in Resources */,
 				0C89FE9B2199C5B000AFFDF7 /* guitar.mp3 in Resources */,
+				0C6AD660219D6B0100E6E442 /* finger.mp3 in Resources */,
 				0C89FE8C2199929E00AFFDF7 /* Assets.xcassets in Resources */,
 				0C89FE8A2199929C00AFFDF7 /* Main.storyboard in Resources */,
 				0C89FE9A2199C5B000AFFDF7 /* backmusic.mp3 in Resources */,

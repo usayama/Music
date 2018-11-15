@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     // BGM音源の音源ファイルを指定
-    let backmusicPath = Bundle.main.bundleURL.appendingPathComponent("backmusic.mp3")
+    let backmusicPath = Bundle.main.bundleURL.appendingPathComponent("finger.mp3")
     // BGMのインスタンスを作成
     var backmusicPlayer = AVAudioPlayer()
     
